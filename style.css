@@ -406,6 +406,7 @@ li {
   font-size: 30px;
   font-weight: bold;
   padding: 20px 0;
+  margin-top: -7vw;
 }
 
 .main_slide3 .fav-food h3 {
@@ -576,7 +577,7 @@ li {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .letter-head {
@@ -661,9 +662,10 @@ li {
 
 .testimonials {
   background-color: rgb(252, 222, 195);
-  padding: 60px 5vw;
+  padding: 35px 5vw;
   text-align: center;
   margin-bottom: 80px;
+  border-radius: 15px;
 }
 
 .testimonials h2 {
@@ -694,6 +696,9 @@ li {
   margin-bottom: 20px;
   align-items: center;
   text-align: center;
+  display: flex;
+  transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+  will-change: transform, box-shadow;
 }
 
 #custom-img5 {
@@ -706,13 +711,24 @@ li {
   font-size: 1.3rem;
   color: #333;
   margin-top: 10px;
+  margin-left: 55px;
 }
 
 .testimonial h4 {
-  margin-top: 15px;
+  margin-top: 65px;
   font-weight: bold;
   font-size: 1rem;
   color: orangered;
+}
+
+#heading2 {
+  margin-left: 40px;
+  margin-right: 15px;
+}
+
+#heading3 {
+  margin-left: 50px;
+  margin-right: 10px;
 }
 
 /* Hide scrollbar */
@@ -722,6 +738,29 @@ li {
 .testimonial-slider {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+#github {
+  width: 60px;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: -20px;
+}
+
+.testimonial:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(253, 57, 8, 0.5);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.testimonial::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -811,6 +850,20 @@ li {
 
   .q-ans div:first-child {
     margin-right: 15px;
+  }
+
+  #heading1 {
+    margin-right: 15px;
+  }
+
+  #heading2 {
+    margin-left: 0;
+    margin-right: 25px;
+  }
+
+  #heading3 {
+    margin-left: 0;
+    margin-right: 20px;
   }
 }
 
@@ -1014,6 +1067,20 @@ li {
   #custom-img4 {
     width: 27vw;
   }
+
+  .testimonial {
+    flex-flow: column;
+  }
+
+  .testimonial p {
+    margin-left: 0;
+  }
+
+  #heading1,
+  #heading2,
+  #heading3 {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -1077,6 +1144,7 @@ li {
 
   .main_slide3 .fav-head h3 {
     font-size: 25px;
+    margin-top: -22vw;
   }
 
   .main_slide3 .fav-head p {
@@ -1133,6 +1201,10 @@ li {
   }
 
   .footer-2 h2 {
+    font-size: 20px;
+  }
+
+  .testimonials h2 {
     font-size: 20px;
   }
 }
@@ -1257,6 +1329,7 @@ li {
     max-width: 200px;
     margin: 0 auto;
     border-radius: 10px;
+    margin-top: -30px;
   }
 
   .question {
